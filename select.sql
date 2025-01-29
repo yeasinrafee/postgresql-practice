@@ -91,3 +91,9 @@ SELECT * FROM students LIMIT 5 OFFSET 5 * 3;
 -- DELETE
 DELETE FROM students
     WHERE grade = 'B';
+
+UPDATE students
+    SET email = 'default@mail.com', age = 21
+    WHERE student_id = 5;
+
+SELECT * FROM students;
