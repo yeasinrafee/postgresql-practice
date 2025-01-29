@@ -38,3 +38,8 @@ SELECT * FROM students;
 SELECT email as "Student Email" FROM students;
 
 SELECT * FROM students ORDER BY first_name ASC;
+
+SELECT DISTINCT country FROM students;
+
+SELECT * FROM students
+    WHERE age <> 20 ;
