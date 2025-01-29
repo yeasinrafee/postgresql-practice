@@ -43,3 +43,16 @@ SELECT DISTINCT country FROM students;
 
 SELECT * FROM students
     WHERE age <> 20 ;
+
+SELECT upper(first_name) as first_name_upper_case, * FROM students;
+
+SELECT concat(first_name, ' ', last_name) FROM students;
+
+SELECT AVG(age) FROM students;
+
+SELECT sum(age) FROM students;
+
+SELECT * FROM students
+    WHERE email IS NOT NULL;
+
+SELECT COALESCE(email, 'Email not provided') FROM students;
