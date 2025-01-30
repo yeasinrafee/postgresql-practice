@@ -20,7 +20,8 @@ SELECT * FROM post as p
 SELECT * FROM post as p
     RIGHT JOIN "user" as u ON p.user_id = u.id;
 
-
+SELECT * from post
+    FULL OUTER JOIN "user" ON post.user_id = "user".id;
 
 SELECT * FROM "user";
 SELECT * FROM post;
