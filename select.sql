@@ -57,7 +57,7 @@ SELECT * FROM students
 
 SELECT COALESCE(email, 'Email not provided') FROM students;
 
-SELECT * FROM students WHERE country = 'USA' or country = 'Canada' OR country = 'UK';
+SELECT * FROM students WHERE country = 'USA' OR country = 'Canada' OR country = 'UK';
 
 SELECT * FROM students WHERE country IN('USA', 'UK');
 SELECT * FROM students WHERE country NOT IN('USA', 'UK');
